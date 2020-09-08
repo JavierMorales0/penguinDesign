@@ -5,20 +5,20 @@
 /*  FUENTES   */
 @font-face {
     font-family: "normal";
-    src: url("Nunito-Font/Nunito-Regular.ttf");
+    src: url("./Nunito-Font/Nunito-Regular.ttf");
   }
 
   @font-face {
     font-family: "light";
-    src: url("Nunito-Font/Nunito-Light.ttf");
+    src: url("./Nunito-Font/Nunito-Light.ttf");
   }
   @font-face {
     font-family: "bold";
-    src: url("Nunito-Font/Nunito-Bold.ttf");
+    src: url("./Nunito-Font/Nunito-Bold.ttf");
   }
   @font-face {
     font-family: "extraBold";
-    src: url("Nunito-Font/Nunito-ExtraBold.ttf");
+    src: url("./Nunito-Font/Nunito-ExtraBold.ttf");
   }
   .txt-1{font-size: 1rem;line-height: normal}
   .txt-1_5{font-size: 1.5rem;line-height: normal}
