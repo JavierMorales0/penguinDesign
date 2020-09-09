@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" />
+    <title>Utilidades - penguinDesign</title>
+    <script src="https://kit.fontawesome.com/81af5d6183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://javiermorales0.github.io/penguinDesign/PenguinDesign.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="bg-dark-secondary dark-primary scroll">
+    <header>
+      <input type="checkbox" name="" value="" id="menu">
+
+        <nav class="navbar navbar-dark-shadow bg-light-secondary" tabindex="0">
+            <div class="navbar-tittle">
+              <label for="menu" class="menubar dark-primary txt-normal">
+                <i class="fa fa-bars"></i>
+              </label>
+                <img class="nav-img" id="inicio" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-darkTransparent.png" alt="logo penguin">
+                <p class="nav-tittle" id="inicio">penguinDesign</p>
+            </div>
+            <div class="navbar-content bg-light-secondary">
+                <a href="doc1.html" class="nav-light-link">Documentación</a>
+                <a href="https://javiermorales0.github.io/penguinDesign/Download/PenguinDesign.zip" target="_blank" class="nav-light-link">Descarga</a>
+                <a href="temp.html" class="nav-light-link">Plantillas</a>
+            </div>
+        </nav>
+
+        <div class="sidebar bg-dark-principal">
+            <center>
+              <img src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo.png">
+              <br><br>
+              <h2 class="">penguinDesign</h2>
+            </center>
+            <br>
+
+            <a href="doc1.html" class="nav-light-link"><i class="fas fa-crop-alt"></i><span>Layout</span></a>
+            <a href="doc2.html" class="nav-light-link"><i class="fas fa-text-height"></i><span>Fonts</span></a>
+            <a href="doc3.html" class="nav-light-link"><i class="fas fa-pen-nib"></i></i><span>Tipografía</span></a>
+            <a href="doc4.html" class="nav-light-link"><i class="fas fa-wrench"></i><span>Utilidades</span></a>
+            <a href="doc5.html" class="nav-light-link"><i class="fas fa-cube"></i><span>Componentes</span></a>
+
+            <a href="index.html" class="home nav-light-link"><span>Inicio</span></a>
+        </div>
+    </header>
+    <main class="main-outnav">
+      <div class="container cont">
+        <h1 class="txt-3_5 special">Utilidades</h1>
+        <hr>
+        <h2 class="light-primary txt-2">Alineación para componentes</h2>
+        <p class="light-primary">Dentro de las propiedades que podemos lograr con los componentes en general tenemos aquellos que nos dan la posibilidad de mover a nuestro gusto los elementos en cada contenidor, ubicándolos en izquierda, centro y derecha. Todos estos pertenecen a los elementos flotantes con esl prefijo <span id="class">.float-</span>, entre los cuales tenemos los siguientes:</p>
+        <ul class="light-secondary">
+          <li><span id="class">.float-left</span>: Alineado a la izquierda</li>
+          <li><span id="class">.float-center</span>: Alineado al centro</li>
+          <li><span id="class">.float-right</span>: Alineado a la derecha</li>
+        </ul>
+
+        <div class="container bg-light-secondary">
+          <div class="row red">
+            <div class="float-left">
+              Este es un ejemplo de elemento flotante a la derecha
+            </div>
+          </div>
+          <div class="row blue">
+            <div class="float-center">
+              Este es un ejemplo de elemento flotante al centro
+            </div>
+          </div>
+          <div class="row green">
+            <div class="float-right">
+              Este es un ejemplo de elemento flotante a la izquierda
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-left">
+      Este es un ejemplo de elemento flotante a la derecha
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="float-center">
+      Este es un ejemplo de elemento flotante al centro
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="float-right">
+      Este es un ejemplo de elemento flotante a la izquierda
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Alertas</h2>
+        <p class="light-primary">Las alertas siempre son ncesesarias a la hora de realizar distintos eventos que implementamos en nuestros sitios web, son una manera de mostrar un aviso al usuario según los que contenga y además de sus colores que los identifican. Las alertas contiene el prefijo <span id="class">.alert-</span> seguido de su respectivo color, entre estas alertas tenemos</p>
+        <ul class="light-secondary">
+          <li><span id="class">.alert-blue</span>: Alerta azul</li>
+          <li><span id="class">.alert-white</span>: Alerta blanca</li>
+          <li><span id="class">.alert-green</span>: Alerta verde</li>
+          <li><span id="class">.alert-red</span>: Alerta roja</li>
+          <li><span id="class">.alert-yellow</span>: Alerta amarilla</li>
+        </ul>
+
+        <div class="container">
+          <div class="alert-blue ">
+            <p class="font-normal">Alert Blue!</p>
+          </div>
+          <div class="alert-white ">
+            <p class="font-normal">Alert White!</p>
+          </div>
+          <div class="alert-green ">
+            <p class="font-normal">Alert Green!</p>
+          </div>
+          <div class="alert-red ">
+            <p class="font-normal">Alert Red!</p>
+          </div>
+          <div class="alert-yellow">
+            <p class="font-normal">Alert Yellow!</p>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container">
+  &lt;div class="alert-blue ">
+    &lt;p class="font-normal">Alert Blue!&lt;/p>
+  &lt;/div>
+  &lt;div class="alert-white ">
+    &lt;p class="font-normal">Alert White!&lt;/p>
+  &lt;/div>
+  &lt;div class="alert-green ">
+    &lt;p class="font-normal">Alert Green!&lt;/p>
+  &lt;/div>
+  &lt;div class="alert-red ">
+    &lt;p class="font-normal">Alert Red!&lt;/p>
+  &lt;/div>
+  &lt;div class="alert-yellow">
+    &lt;p class="font-normal">Alert Yellow!&lt;/p>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Bordes</h2>
+        <p class="light-primary">Los bordes son un elemento importante de utilidad cuando a veces hace falta mostrar cierto énfasis en los componentes, o incluso pues diferenciarlo de otros componentes dentro del container. Los bordes se llaman con la clase <span id="class">.border </span>, siendo este su forma básica.</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="border">
+                Ejemplo básico de borde
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="border">
+  Ejemplo básico de borde
+&lt;/div>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Colores para bordes</h3>
+        <p class="light-primary">Lo bordes en el framework actual contienen también algunos tipos de colores que puedes utilizar a tu gusto, el que más te convenga y vaya de acuerdo a tu paleta de colores. Se identifican con el prefijo <span id="class">.border- </span> seguido del nombre del color al que corresponda:</p>
+
+        <div class="container light-primary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-red">
+                Borde rojo
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-blue">
+                Borde azul
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-green">
+                Borde verde
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-yellow">
+                Borde amarillo
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-pink">
+                Borde rosado
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-purple">
+                Borde morado
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 border border-white">
+                Borde blanco
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="border border-red">
+  Borde rojo
+&lt;/div>
+&lt;div class="border border-blue">
+  Borde azul
+&lt;/div>
+&lt;div class="border border-green">
+  Borde verde
+&lt;/div>
+&lt;div class="border border-yellow">
+  Borde amarillo
+&lt;/div>
+&lt;div class="border border-pink">
+  Borde rosado
+&lt;/div>
+&lt;div class="border border-purple">
+  Borde morado
+&lt;/div>
+&lt;div class="border border-white">
+  Borde blanco
+&lt;/div>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Bordes redondeados</h3>
+        <p class="light-primary">Otra propiedad que se les pueden agregar a los bordes para una presentación más estilizada, menos rígia, es la opción que tenemos de colocar el borde de manera redondeada. Se identifica con la clase <span id="class">.border-curved </span>. Ejemplo de ello tenemos:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-8 txt-center border border-curved">
+                Ejemplo de borde redondeado
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="border border-curved">
+  Ejemplo de borde redondeado
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-secondary txt-2">Colores de fondo</h2>
+        <p class="light-primary">El framework incluye ciertas variaciones de colores para tus fondos parte de las variaciones de colores para texto, vienen de manera genial a la hora de combinarse ambos para que exista un correcto balance entre ellos, todo queda a tu elección. Los dos colores principales que como has visto maneja el framework son dos variaciones de negros y blancos. Entre estas variaciones de tonos se encuentran:</p>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.bg-dark-principal</span>: Oscuro intenso</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 bg-dark-principal light-secondary">
+                Fondo oscuro intenso
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="bg-dark-principal light-secondary">
+  Fondo oscuro intenso
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.bg-dark-secondary</span>: Oscuro pálido</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 bg-dark-secondary light-primary">
+                Fondo oscuro pálido
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="bg-dark-principal light-primary">
+  Fondo oscuro pálido
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.bg-light-principal</span>: Claro intenso</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 bg-light-principal dark-secondary">
+                Fondo claro intenso
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="bg-light-principal dark-secondary">
+  Fondo claro intenso
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.bg-light-secondary</span>: Claro pálido</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 bg-light-secondary dark-primary">
+                Fondo claro pálido
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="bg-light-secondary dark-primary">
+  Fondo claro pálido
+&lt;/div>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Otras variaciones de fondo</h3>
+        <ul>
+          <li class="light-secondary"><span id="class">.white</span>: Blanco</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 white dark-primary">
+                Fondo blanco
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="white dark-primary">
+  Fondo blanco
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.red</span>: Rojo</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 red dark-primary">
+                Fondo rojo
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="red dark-primary">
+  Fondo rojo
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.blue</span>: Azul</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 blue dark-primary">
+                Fondo azul
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="blue dark-primary">
+  Fondo azul
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.green</span>: Verde</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 green dark-primary">
+                Fondo verde
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="green dark-primary">
+  Fondo verde
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary"><span id="class">.yellow</span>: Amarillo</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="float-center">
+              <div class="padding-1 yellow dark-primary">
+                Fondo amarillo
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="yellow dark-primary">
+  Fondo amarillo
+&lt;/div>
+</pre>
+        </div>
+      </div>
+    </main>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>

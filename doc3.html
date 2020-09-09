@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" />
+    <title>Tipografía - penguinDesign</title>
+    <script src="https://kit.fontawesome.com/81af5d6183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://javiermorales0.github.io/penguinDesign/PenguinDesign.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="bg-dark-secondary dark-primary scroll">
+    <header>
+      <input type="checkbox" name="" value="" id="menu">
+
+        <nav class="navbar navbar-dark-shadow bg-light-secondary" tabindex="0">
+            <div class="navbar-tittle">
+              <label for="menu" class="menubar dark-primary txt-normal">
+                <i class="fa fa-bars"></i>
+              </label>
+                <img class="nav-img" id="inicio" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-darkTransparent.png" alt="logo penguin">
+                <p class="nav-tittle" id="inicio">penguinDesign</p>
+            </div>
+            <div class="navbar-content bg-light-secondary">
+                <a href="doc1.html" class="nav-light-link">Documentación</a>
+                <a href="https://javiermorales0.github.io/penguinDesign/Download/PenguinDesign.zip" target="_blank" class="nav-light-link">Descarga</a>
+                <a href="temp.html" class="nav-light-link">Plantillas</a>
+            </div>
+        </nav>
+
+        <div class="sidebar bg-dark-principal">
+            <center>
+              <img src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo.png">
+              <br><br>
+              <h2 class="">penguinDesign</h2>
+            </center>
+            <br>
+
+            <a href="doc1.html" class="nav-light-link"><i class="fas fa-crop-alt"></i><span>Layout</span></a>
+            <a href="doc2.html" class="nav-light-link"><i class="fas fa-text-height"></i><span>Fonts</span></a>
+            <a href="doc3.html" class="nav-light-link"><i class="fas fa-pen-nib"></i></i><span>Tipografía</span></a>
+            <a href="doc4.html" class="nav-light-link"><i class="fas fa-wrench"></i><span>Utilidades</span></a>
+            <a href="doc5.html" class="nav-light-link"><i class="fas fa-cube"></i><span>Componentes</span></a>
+
+            <a href="index.html" class="home nav-light-link"><span>Inicio</span></a>
+        </div>
+    </header>
+    <main class="main-outnav">
+      <div class="container cont">
+        <h1 class="txt-3_5 special">Tipografía</h1>
+        <hr>
+        <h2 class="light-primary txt-2">Colores de texto</h2>
+        <p class="light-primary">Para las fuentes, para tus títulos o párrafos, te ofrecemos un par de colores para hacer énfasis en el texto, para que destaquen en cada uno de los fondos que el framework incluye o incluso para alternar en el contenido. Aquí vemos los colores existentes:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 width-50 bg-dark-secondary light-primary">
+                Texto light principal
+              </div>
+            </div>
+            <div class="float-center">
+              <div class="col-12 width-50 bg-dark-principal light-secondary">
+                Texto light secundario
+              </div>
+            </div>
+            <div class="float-center">
+              <div class="col-12 width-50 bg-light-secondary dark-primary">
+                Texto light secundario
+              </div>
+            </div>
+            <div class="float-center">
+              <div class="col-12 width-50 bg-light-principal dark-secondary">
+                Texto light secundario
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="light-primary">La sintaxis antes utilizada para que tomes en cuenta es la siguiente, fíjate en las clases que se encuentran con las columnas y van luego de los background colors, son las clases que controlan los colores de texto:</p>
+        <div class="container bg-light-secondary">
+<pre>
+  &lt;div class="container bg-light-secondary">
+    &lt;div class="row">
+      &lt;div class="float-center">
+        &lt;div class="col-12 width-50 bg-dark-secondary light-primary">
+          Texto light principal
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="float-center">
+        &lt;div class="col-12 width-50 bg-dark-principal light-secondary">
+          Texto light secundario
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="float-center">
+        &lt;div class="col-12 width-50 bg-light-secondary dark-primary">
+          Texto light secundario
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="float-center">
+        &lt;div class="col-12 width-50 bg-light-principal dark-secondary">
+          Texto light secundario
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+</pre>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Posiciones para texto</h2>
+        <p class="light-primary">El texto también puede manejarse de la forma en la que deseemos, de tres maneras distintas como comúnmente lo apreciamos en muchos lugares, ajustado a la izquierda, al centro, y a la derecha. En el siguiente espacio veremos ejemplos de las posiciones del texto y su respectiva sintaxis:</p>
+        <br>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="width-100">
+              <div>
+                <p class="txt-left">Ejemplo de texto a la izquierda</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="width-100">
+              <div>
+                <p class="txt-center">Ejemplo de texto al centro</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="width-100">
+              <div>
+                <p class="txt-right">Ejemplo de texto a la derecha</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="width-100">
+      &lt;div>
+        &lt;p class="txt-left">Ejemplo de texto a la izquierda&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="width-100">
+      &lt;div>
+        &lt;p class="txt-center">Ejemplo de texto al centro&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="width-100">
+      &lt;div>
+        &lt;p class="txt-right">Ejemplo de texto a la derecha&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Variaciones de texto</h2>
+        <p class="light-primary">Las fuentes propias del framework también incluyen variaciones en su forma de mostrarse en pantalla, en específico dos variantes que son de lo más común a la hora de estar escribiendo párrafos y se quieres hacer énfasis con alguno de estas variantes.</p>
+        <br>
+
+        <h3 class="light-secondary txt-1_5">Texto negrita</h3>
+        <p class="light-primary">Es una variación que se utiliza más a menudo para hace énfasis en alguna palabra rellenandola, de manera que resalte de las otras:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <p>Párrafo haciendo <span class="font-negrita">negrita</span> cuando es necesario.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;p>Párrafo haciendo &lt;span class="font-negrita">negrita&lt;/span> cuando es necesario.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h3 class="light-secondary txt-1_5">Texto cursiva</h3>
+        <p class="light-primary">Es otra variación que podemos utilizar para algunos textos para también remarcar algo, en algunas situaciones más que todo para citar ciertos textos dentro de un párrafo:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <p>Párrafo haciendo <span class="font-cursiva">cursiva</span> cuando es necesario.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+  <pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;p>Párrafo haciendo &lt;span class="font-cursiva">cursiva&lt;/span> cuando es necesario.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+  </pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h3 class="light-secondary txt-1_5">Texto en mayúsculas</h3>
+        <p class="light-primary">La clase <span id="class">.font-mayus</span> permite al usuario la posibilidad de convertir todo el texto que se digite de manera automática en mayúsculas, sin importar si estas los estén o no:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center font-mayus">
+              Párrafo convertido a mayúsculas.
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+  <pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center font-mayus">
+      Párrafo convertido a mayúsculas.
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+  </pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h3 class="light-secondary txt-1_5">Texto en minúsculas</h3>
+        <p class="light-primary">La clase <span id="class">.font-minus</span> permite al usuario la posibilidad de convertir todo el texto que se digite de manera automática en minúscula, sin importar si estas los estén o no:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center font-minus">
+              Párrafo convertido a minúscula.
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+  <pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center font-minus">
+      Párrafo convertido a minúscula.
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+  </pre>
+        </div>
+      </div>
+    </main>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>

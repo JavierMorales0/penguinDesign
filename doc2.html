@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" />
+    <title>Fonts - penguinDesign</title>
+    <script src="https://kit.fontawesome.com/81af5d6183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://javiermorales0.github.io/penguinDesign/PenguinDesign.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="bg-dark-secondary dark-primary scroll">
+    <header>
+      <input type="checkbox" name="" value="" id="menu">
+
+        <nav class="navbar navbar-dark-shadow bg-light-secondary" tabindex="0">
+            <div class="navbar-tittle">
+              <label for="menu" class="menubar dark-primary txt-normal">
+                <i class="fa fa-bars"></i>
+              </label>
+                <img class="nav-img" id="inicio" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-darkTransparent.png" alt="logo penguin">
+                <p class="nav-tittle" id="inicio">penguinDesign</p>
+            </div>
+            <div class="navbar-content bg-light-secondary">
+                <a href="doc1.html" class="nav-light-link">Documentación</a>
+                <a href="https://javiermorales0.github.io/penguinDesign/Download/PenguinDesign.zip" target="_blank" class="nav-light-link">Descarga</a>
+                <a href="temp.html" class="nav-light-link">Plantillas</a>
+            </div>
+        </nav>
+
+        <div class="sidebar bg-dark-principal">
+            <center>
+              <img src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo.png">
+              <br><br>
+              <h2 class="">penguinDesign</h2>
+            </center>
+            <br>
+
+            <a href="doc1.html" class="nav-light-link"><i class="fas fa-crop-alt"></i><span>Layout</span></a>
+            <a href="doc2.html" class="nav-light-link"><i class="fas fa-text-height"></i><span>Fonts</span></a>
+            <a href="doc3.html" class="nav-light-link"><i class="fas fa-pen-nib"></i></i><span>Tipografía</span></a>
+            <a href="doc4.html" class="nav-light-link"><i class="fas fa-wrench"></i><span>Utilidades</span></a>
+            <a href="doc5.html" class="nav-light-link"><i class="fas fa-cube"></i><span>Componentes</span></a>
+
+            <a href="index.html" class="home nav-light-link"><span>Inicio</span></a>
+        </div>
+    </header>
+    <main class="main-outnav">
+      <div class="container cont">
+        <h1 class="txt-3_5 special">Fonts</h1>
+        <hr>
+        <h2 class="light-primary txt-2">Fuentes nativas</h2>
+        <p class="light-primary">penguinDesign maneja fuentes que se adaptan perfectamente con la temática elegante, moderna y simple que se ha implementado en la misma de manera precisa</p>
+        <p class="light-primary">Entre las variaciones de fuentes que logramos encontrar con este framework se encuentran:</p>
+
+        <ul>
+          <li class="light-secondary">Normal</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <pre>@font-face { font-family: "normal"; }</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary">Light</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <pre>@font-face { font-family: "light"; }</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary">Bold</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <pre>@font-face { font-family: "bold"; }</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary">ExtraBold</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <pre>@font-face { font-family: "extraBold"; }</pre>
+        </div>
+
+        <p class="light-primary">El <span class="font-cursiva" id="class">font-family</span> utilizado en el framework se aplica de manera nativa en todo el documento como un global font, puede cambiarse esto desde su propio font-face asociado como observamos anteriormente.</p>
+      </div>
+      <br><br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Bold y ExtraBold</h2>
+        <p class="light-primary">Para remarcar cierto contenido, agregando más relleno que el texto normal. Tenemos dos variaciones en cuando al texto bold, por un lado tenemos <span id="class">.font-bold</span> para un texto con resaltado normal, y por otro el <span id="class">.font-extraBold</span> para un texto con más grosor:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <p>Párrafo utilizando <span class="font-bold">bold</span> en una palabra.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;p>Párrafo utilizando &lt;span class="font-bold">bold&lt;/span> en una palabra.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+        <br>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <p>Párrafo utilizando <span class="font-extraBold">extrabold</span> en una palabra.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;p>Párrafo utilizando &lt;span class="font-extraBold">extrabold&lt;/span> en una palabra.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Encabezados y párrafos</h2>
+        <p class="light-primary">Todas las etiquetas relacionadas en cuanto al texto, como normalmente lo serían los encabezados y párrafos, también contienen formato asociado con penguinDesign. Podemos ver aquí una tabla con algunos ejemplos</p>
+
+        <table class="table table-strip-light bg-light-principal">
+            <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Ejemplo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>&lt;h1>&lt;h1></td>
+                <td><h1>h1 - Texto de ejemplo</h1></td>
+            </tr>
+            <tr>
+                <td>&lt;h2>&lt;h2></td>
+                <td><h2>h2 - Texto de ejemplo</h2></td>
+            </tr>
+            <tr>
+                <td>&lt;h3>&lt;h3></td>
+                <td><h3>h3 - Texto de ejemplo</h3></td>
+            </tr>
+            <tr>
+                <td>&lt;h4>&lt;h4></td>
+                <td><h4>h4 - Texto de ejemplo</h4></td>
+            </tr>
+            <tr>
+                <td>&lt;h5>&lt;h5></td>
+                <td><h5>h5 - Texto de ejemplo</h5></td>
+            </tr>
+            <tr>
+                <td>&lt;h6>&lt;h6></td>
+                <td><h6>h6 - Texto de ejemplo</h6></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Listas</h2>
+        <p class="light-primary">Otro aspecto que el framework abarca en cuento a las fuentes o estilos utilizados para el dise;o con las listas, que van desde las listas más normales como lo son las desordenadas, hasta las ordenadas, penguinDesign se encarga de ello adaptando su diseño.</p>
+        <p class="light-primary">Algunos ejemplos podemos verlos ahora mismo:</p>
+
+        <h2 class="light-secondary">Listas desordenadas</h2>
+        <div class="container bg-light-secondary">
+          <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <ul>
+              <li>Elemento 3.1</li>
+              <li>Elemento 3.2</li>
+              <li>Elemento 3.3</li>
+              <ul>
+                <li>Elemento 3.1.1</li>
+                <li>Elemento 3.1.2</li>
+                <li>Elemento 3.1.3</li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+
+        <h2 class="light-secondary">Listas ordenadas</h2>
+        <div class="container bg-light-secondary">
+          <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <ol type="a">
+              <li>Elemento 3.1</li>
+              <li>Elemento 3.2</li>
+              <li>Elemento 3.3</li>
+              <ol type="i">
+                <li>Elemento 3.1.1</li>
+                <li>Elemento 3.1.2</li>
+                <li>Elemento 3.1.3</li>
+                <ol type="I">
+                  <li>Elemento 3.1.1.1</li>
+                  <li>Elemento 3.1.1.2</li>
+                  <li>Elemento 3.1.1.3</li>
+                </ol>
+              </ol>
+            </ol>
+          </ol>
+        </div>
+
+        <p class="light-primary">El <span class="font-cursiva" id="class">font-family</span> utilizado en el framework se aplica de manera nativa en todo el documento como un global font, puede cambiarse esto desde su propio font-face asociado como observamos anteriormente.</p>
+      </div>
+      <br><br>
+    </main>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>

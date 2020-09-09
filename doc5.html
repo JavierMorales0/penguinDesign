@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" />
+    <title>Componentes - penguinDesign</title>
+    <script src="https://kit.fontawesome.com/81af5d6183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://javiermorales0.github.io/penguinDesign/PenguinDesign.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="bg-dark-secondary dark-primary scroll">
+    <header>
+      <input type="checkbox" name="" value="" id="menu">
+
+        <nav class="navbar navbar-dark-shadow bg-light-secondary" tabindex="0">
+            <div class="navbar-tittle">
+              <label for="menu" class="menubar dark-primary txt-normal">
+                <i class="fa fa-bars"></i>
+              </label>
+                <img class="nav-img" id="inicio" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-darkTransparent.png" alt="logo penguin">
+                <p class="nav-tittle" id="inicio">penguinDesign</p>
+            </div>
+            <div class="navbar-content bg-light-secondary">
+                <a href="doc1.html" class="nav-light-link">Documentación</a>
+                <a href="https://javiermorales0.github.io/penguinDesign/Download/PenguinDesign.zip" target="_blank" class="nav-light-link">Descarga</a>
+                <a href="temp.html" class="nav-light-link">Plantillas</a>
+            </div>
+        </nav>
+
+        <div class="sidebar bg-dark-principal">
+            <center>
+              <img src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo.png">
+              <br><br>
+              <h2 class="">penguinDesign</h2>
+            </center>
+            <br>
+
+            <a href="doc1.html" class="nav-light-link"><i class="fas fa-crop-alt"></i><span>Layout</span></a>
+            <a href="doc2.html" class="nav-light-link"><i class="fas fa-text-height"></i><span>Fonts</span></a>
+            <a href="doc3.html" class="nav-light-link"><i class="fas fa-pen-nib"></i></i><span>Tipografía</span></a>
+            <a href="doc4.html" class="nav-light-link"><i class="fas fa-wrench"></i><span>Utilidades</span></a>
+            <a href="doc5.html" class="nav-light-link"><i class="fas fa-cube"></i><span>Componentes</span></a>
+
+            <a href="index.html" class="home nav-light-link"><span>Inicio</span></a>
+        </div>
+    </header>
+    <main class="main-outnav">
+      <div class="container cont">
+        <h1 class="txt-3_5 special">Componentes</h1>
+        <hr>
+        <h2 class="light-primary txt-2">Botones</h2>
+        <p class="light-primary">El framework de penguinDesign conteiene entre sus componentes una variedad de botones que puedes utilizar a tu gusto, para hacer más creativo tu página web, van desde botones normales con nombres hasta algunos especiales que incluyen iconos.</p>
+        <p class="light-primary">La clase que debes de utilizar para referenciar tus botones corresponde a la clase de <span class="font-cursiva" id="class">.btn</span>, con este damos a entender que es un elemento de botón y nos da su diseño mas básico, mostramos el ejemplo a continuación:</p>
+
+        <div class="container bg-light-secondary padding-x-3">
+          <div class="row">
+            <div class="float-center">
+              <button type="button" name="button" class="btn">Botón</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary padding-x-3">
+<pre>
+&lt;div class="container bg-light-secondary padding-x-3">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;button type="button" name="button" class="btn">Botón&lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+        <p class="light-primary">Las clases flotantes y los padding pueden ser modificados a gusto, en este y en los siguientes ejemplos de botones será para mostrarlos de la mejor manera posible, solo tienes que cambiar las clases siguiendo la documentación para agregar los botones que desees a tu gusto.</p>
+      </div>
+
+      <div class="container cont">
+        <h3 class="light-secondary txt-1_5">Botones por función</h3>
+        <p class="light-primary">En primer lugar hay que encionar que el framewrok incluye lo que serían 4 variedades adicionales del boton de texto, estas para representar diversas acciones que se desean lograr dento de los diseños de página web, con este podemos encontrar variaciones:</p>
+        <p class="light-primary">Entre los 4 que logramos encontrar tenemos:</p>
+        <ul class="light-secondary">
+          <li><span id="class">.btn-circle-add</span>: Botón agregar</li>
+          <li><span id="class">.btn-circle-delete</span>: Botón borrar</li>
+          <li><span id="class">.btn-circle-check</span>: Botón con cheque</li>
+          <li><span id="class">.btn-circle-alert</span>: Botón de alerta</li>
+        </ul>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-3 float-center">
+                <button type="button" name="button" class="btn btn-circle-add"></button>
+              </div>
+              <div class="col-3 float-center">
+                <button type="button" name="button" class="btn btn-circle-delete"></button>
+              </div>
+              <div class="col-3 float-center">
+                <button type="button" name="button" class="btn btn-circle-check"></button>
+              </div>
+              <div class="col-3 float-center">
+                <button type="button" name="button" class="btn btn-circle-alert"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-3 float-center">
+        &lt;button type="button" name="button" class="btn btn-circle-add">&lt;/button>
+      &lt;/div>
+      &lt;div class="col-3 float-center">
+        &lt;button type="button" name="button" class="btn btn-circle-delete">&lt;/button>
+      &lt;/div>
+      &lt;div class="col-3 float-center">
+        &lt;button type="button" name="button" class="btn btn-circle-check">&lt;/button>
+      &lt;/div>
+      &lt;div class="col-3 float-center">
+        &lt;button type="button" name="button" class="btn btn-circle-alert">&lt;/button>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Colores de botones</h2>
+        <p class="light-primary">Además de las variaciones en los tipos de botones que tenemos a la mano, podemos aplicar distintos colores que ya vienen con el framework, están listos para que trabajes con ellos.</p>
+
+        <h3 class="light-secondary txt-1_5">Colores normales</h3>
+        <p class="light-primary">Tenemos 5 variaciones de botones normales, los cuales son:</p>
+        <ul class="light-secondary">
+          <li><span id="class">.btnColor-white</span>: Botón blanco</li>
+          <li><span id="class">.btnColor-red</span>: Botón rojo</li>
+          <li><span id="class">.btnColor-blue</span>: Botón azul</li>
+          <li><span id="class">.btnColor-green</span>: Botón verde</li>
+          <li><span id="class">.btnColor-yellow</span>: Botón amarillo</li>
+        </ul>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnColor-white">Blanco</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnColor-red">Rojo</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnColor-blue">Azul</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnColor-green">Verde</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnColor-yellow">Amarillo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnColor-white">Blanco&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnColor-red">Rojo&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnColor-blue">Azul&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnColor-green">Verde&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnColor-yellow">Amarillo&lt;/button>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Colores normales</h3>
+        <p class="light-primary">Tenemos 5 variaciones de botones con colores invertidos, es decir, son lo contrario de los colores normales, con tonalidades más oscuras, en el caso de algunos con colores, contrarios en cuanto a su paleta de color. Entre estos tenemos:</p>
+        <ul class="light-secondary">
+          <li><span id="class">.btnIColor-white</span>: Botón blanco invertido o negro</li>
+          <li><span id="class">.btnIColor-red</span>: Botón rojo invertido</li>
+          <li><span id="class">.btnIColor-blue</span>: Botón azul invertido</li>
+          <li><span id="class">.btnIColor-green</span>: Botón verde invertido</li>
+          <li><span id="class">.btnIColor-yellow</span>: Botón amarillo invertido</li>
+        </ul>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnIColor-white">Negro</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnIColor-red">Rojo</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnIColor-blue">Azul</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnIColor-green">Verde</button>
+              </div>
+              <div class="col-2 float-center">
+                <button type="button" name="button" class="btn btnIColor-yellow">Amarillo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnIColor-white">Negro&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnIColor-red">Rojo&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnIColor-blue">Azul&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnIColor-green">Verde&lt;/button>
+      &lt;/div>
+      &lt;div class="col-2 float-center">
+        &lt;button type="button" name="button" class="btn btnIColor-yellow">Amarillo&lt;/button>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Tamaños para botones</h3>
+        <p class="light-primary">Para los botones también tenemos otra forma de que se adapten con distintos tamaños, adaptándose al estilo de página o a veces de formularios que deseas dar en tus páginas web.</p>
+        <p class="light-primary">Todos se basan en base a la clase <span id="class">.width-</span> .Entre algunos ejemplos de tamaños para botones tenemos:</p>
+        <ul class="light-secondary">
+          <li><span id="class">.width-25</span>: Tamaño al 25%</li>
+          <li><span id="class">.width-50</span>: Tamaño al 50%</li>
+          <li><span id="class">.width-75</span>: Tamaño al 75%</li>
+          <li><span id="class">.width-100</span>: Tamaño al 100%</li>
+        </ul>
+
+        <div class="container bg-light-secondary">
+          <div class="row padding-y-1">
+            <div class="float-center">
+              <button type="button" name="button" class="btn btnIColor-white width-25">Botón al 25%</button>
+            </div>
+          </div>
+          <div class="row padding-y-1">
+            <div class="float-center">
+              <button type="button" name="button" class="btn btnIColor-white width-50">Botón al 50%</button>
+            </div>
+          </div>
+          <div class="row padding-y-1">
+            <div class="float-center">
+              <button type="button" name="button" class="btn btnIColor-white width-75">Botón al 75%</button>
+            </div>
+          </div>
+          <div class="row padding-y-1">
+            <div class="float-center">
+              <button type="button" name="button" class="btn btnIColor-white width-100">Botón al 100%</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row padding-y-1">
+    &lt;div class="float-center">
+      &lt;button type="button" name="button" class="btn btnIColor-white width-25">Botón al 25%&lt;/button>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row padding-y-1">
+    &lt;div class="float-center">
+      &lt;button type="button" name="button" class="btn btnIColor-white width-50">Botón al 50%&lt;/button>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row padding-y-1">
+    &lt;div class="float-center">
+      &lt;button type="button" name="button" class="btn btnIColor-white width-75">Botón al 75%&lt;/button>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row padding-y-1">
+    &lt;div class="float-center">
+      &lt;button type="button" name="button" class="btn btnIColor-white width-100">Botón al 100%&lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Tablas</h2>
+        <p class="light-primary">Las tablas son de gran utilidad cuendo en la página se desean llevar datos de manera ordenada, cuando se trabajan con bases de datos y tablas relacionadas, o incluso para solo ingresar ciertos datos de manera manual y ser mostrados al usuario en este formato.</p>
+        <p class="light-primary">Las tablas parten en base a la clase <span id="class">.table</span>, es el diseño más básico que se puede mostrar:</p>
+
+        <div class="container bg-light-secondary">
+          <table class="table">
+              <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Carrera</th>
+                  <th>Año</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>Javier Morales</td>
+                  <td>21</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2021</td>
+              </tr>
+              <tr>
+                  <td>Enrique Antonio</td>
+                  <td>20</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2020</td>
+              </tr>
+              <tr>
+                  <td>Brian Steve</td>
+                  <td>21</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2020</td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;table class="table">
+    &lt;thead>
+    &lt;tr>
+        &lt;th>Nombre&lt;/th>
+        &lt;th>Edad&lt;/th>
+        &lt;th>Carrera&lt;/th>
+        &lt;th>Año&lt;/th>
+    &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+    &lt;tr>
+        &lt;td>Javier Morales&lt;/td>
+        &lt;td>21&lt;/td>
+        &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+        &lt;td>2021&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Enrique Antonio&lt;/td>
+        &lt;td>20&lt;/td>
+        &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+        &lt;td>2020&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Brian Steve&lt;/td>
+        &lt;td>21&lt;/td>
+        &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+        &lt;td>2020&lt;/td>
+    &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Diseño claro</h3>
+        <div class="container bg-light-secondary">
+          <table class="table table-strip-light">
+              <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Carrera</th>
+                  <th>Año</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>Javier Morales</td>
+                  <td>21</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2021</td>
+              </tr>
+              <tr>
+                  <td>Enrique Antonio</td>
+                  <td>20</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2020</td>
+              </tr>
+              <tr>
+                  <td>Brian Steve</td>
+                  <td>21</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2020</td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-light-secondary">
+  &lt;table class="table table-strip-light">
+      &lt;thead>
+      &lt;tr>
+          &lt;th>Nombre&lt;/th>
+          &lt;th>Edad&lt;/th>
+          &lt;th>Carrera&lt;/th>
+          &lt;th>Año&lt;/th>
+      &lt;/tr>
+      &lt;/thead>
+      &lt;tbody>
+      &lt;tr>
+          &lt;td>Javier Morales&lt;/td>
+          &lt;td>21&lt;/td>
+          &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+          &lt;td>2021&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+          &lt;td>Enrique Antonio&lt;/td>
+          &lt;td>20&lt;/td>
+          &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+          &lt;td>2020&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+          &lt;td>Brian Steve&lt;/td>
+          &lt;td>21&lt;/td>
+          &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+          &lt;td>2020&lt;/td>
+      &lt;/tr>
+      &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+</pre>
+        </div>
+
+        <h3 class="light-secondary txt-1_5">Diseño oscuro</h3>
+        <div class="container bg-dark-principal">
+          <table class="table table-strip-dark light-primary">
+              <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Carrera</th>
+                  <th>Año</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>Javier Morales</td>
+                  <td>21</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2021</td>
+              </tr>
+              <tr>
+                  <td>Enrique Antonio</td>
+                  <td>20</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2020</td>
+              </tr>
+              <tr>
+                  <td>Brian Steve</td>
+                  <td>21</td>
+                  <td>Ingenieria en Sistemas Informaticos</td>
+                  <td>2020</td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container bg-dark-principal">
+  &lt;table class="table table-strip-dark light-primary">
+      &lt;thead>
+      &lt;tr>
+          &lt;th>Nombre&lt;/th>
+          &lt;th>Edad&lt;/th>
+          &lt;th>Carrera&lt;/th>
+          &lt;th>Año&lt;/th>
+      &lt;/tr>
+      &lt;/thead>
+      &lt;tbody>
+      &lt;tr>
+          &lt;td>Javier Morales&lt;/td>
+          &lt;td>21&lt;/td>
+          &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+          &lt;td>2021&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+          &lt;td>Enrique Antonio&lt;/td>
+          &lt;td>20&lt;/td>
+          &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+          &lt;td>2020&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+          &lt;td>Brian Steve&lt;/td>
+          &lt;td>21&lt;/td>
+          &lt;td>Ingenieria en Sistemas Informaticos&lt;/td>
+          &lt;td>2020&lt;/td>
+      &lt;/tr>
+      &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Formularios</h3>
+        <p class="light-primary">Los formularios son de gran ayuda a la hora de realizar peticiones de datos, para registros de cuentas, para realizar encuestas, entre otras determinadas tareas, por lo tanto es necesario llevar un diseño adecuado.</p>
+        <p class="light-primary">La estructura básica que se manejara en el formulario es la siguiente:</p>
+
+        <form action="" method="" class="light-primary">
+          <p>Nombre: <input type="text" name="nombre" size="40"></p>
+          <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+          <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+          </p>
+          <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </p>
+        </form>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;form action="" method="">
+  &lt;p>Nombre: &lt;input type="text" name="nombre" size="40">&lt;/p>
+  &lt;p>Año de nacimiento: &lt;input type="number" name="nacido" min="1900">&lt;/p>
+  &lt;p>Sexo:
+    &lt;input type="radio" name="hm" value="h"> Hombre
+    &lt;input type="radio" name="hm" value="m"> Mujer
+  &lt;/p>
+  &lt;p>
+    &lt;input type="submit" value="Enviar">
+    &lt;input type="reset" value="Borrar">
+  &lt;/p>
+&lt;/form>
+</pre>
+        </div>
+
+        <p class="light-primary">penguinDesign se encarga de darlo formato a los formularios de manera minimalista, a componentes como lo pueden ser label, inputs, combos, entre otros, solo utiliza las clases adecuadas para darle formato a tus formularios de manera simplista:</p>
+
+        <form action="" class="light-primary">
+          <br>
+          <div class="form-container width-25 txt-center">
+            <label class="form-label" for="input-1">Nombre</label>
+            <input type="text" class="form-control light-primary" name="input-1" id="">
+          </div>
+          <div class="form-container width-25 ">
+            <label class="form-label" for="input-1">Apellido</label>
+            <input type="text" class="form-control light-primary" name="input-1" id="">
+          </div>
+          <div class="form-container width-25 ">
+            <label class="form-label" for="input-1">Correo</label>
+            <input type="text" class="form-control light-primary" name="input-1" id="">
+          </div>
+          <div class="form-container width-25 ">
+            <label class="form-label" for="input-1">Genero</label>
+            <select name="input-1" id="" class="form-control width-50 light-secondary">
+              <option value=""> Valor 1</option>
+              <option value=""> Valor 2</option>
+              <option value=""> Valor 3</option>
+            </select>
+          </div>
+          <br>
+          <button class="btn width-25 " type="submit">Enviar</button>
+        </form>
+        <br>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;form action="" class="light-primary">
+  &lt;br>
+  &lt;div class="form-container width-25 txt-center">
+    &lt;label class="form-label" for="input-1">Nombre&lt;/label>
+    &lt;input type="text" class="form-control light-primary" name="input-1" id="">
+  &lt;/div>
+  &lt;div class="form-container width-25 ">
+    &lt;label class="form-label" for="input-1">Apellido&lt;/label>
+    &lt;input type="text" class="form-control light-primary" name="input-1" id="">
+  &lt;/div>
+  &lt;div class="form-container width-25 ">
+    &lt;label class="form-label" for="input-1">Correo&lt;/label>
+    &lt;input type="text" class="form-control light-primary" name="input-1" id="">
+  &lt;/div>
+  &lt;div class="form-container width-25 ">
+    &lt;label class="form-label" for="input-1">Genero&lt;/label>
+    &lt;select name="input-1" id="" class="form-control width-50 light-secondary">
+      &lt;option value=""> Valor 1&lt;/option>
+      &lt;option value=""> Valor 2&lt;/option>
+      &lt;option value=""> Valor 3&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;br>
+  &lt;button class="btn width-25 " type="submit">Enviar&lt;/button>
+&lt;/form>
+</pre>
+        </div>
+      </div>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">NavBars</h3>
+        <p class="light-primary">Los navbars siempre son necesario a la hora de estar diseñando nuestros sitios web ya que siempre es necesario desplazarse de manera ráída entre las distintas páginas que contenga el sitio, además de presentar las mismas de una maner categorizada y entendible para el público</p>
+        <p class="light-primary">Los navbars en este caso los identificaremos con la clase <span id="class">.navbar</span>, seguido en segundo nivel de otro elemento con la clase <span id="class">.navbar-content</span>, luego se incluyen las etiquetas de link, cada una haciendo referencia a cada categoria que se va a agregar, utilizando las clases <span id="class">.nav-...-link</span>. Si se ha logrado la estructura base, el nav tendrá el siguiente diseño:</p>
+
+          <div class="navbar-content bg-dark-principal">
+            <a href="" class="nav-dark-link">Documentación</a>
+            <a href="" class="nav-dark-link">Descarga</a>
+            <a href="" class="nav-dark-link">Plantillas</a>
+          </div>
+        </nav>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;nav class="nabvar">
+  &lt;div class="navbar-content bg-dark-principal">
+    &lt;a href="" class="nav-dark-link">Documentación&lt;/a>
+    &lt;a href="" class="nav-dark-link">Descarga&lt;/a>
+    &lt;a href="" class="nav-dark-link">Plantillas&lt;/a>
+  &lt;/div>
+&lt;/nav>
+</pre>
+        </div>
+        <p class="light-primary">Los navbars son adaptables a los colores de fondo, colores de texto y tamaños de texto, por defecto para trabajar con ellos, en el caso de las etiquetas se incluyen las etiquetas para los navbars dark, <span id="class">.nav-dark-link</span>, y están aquellas que son destinadas para los navbar light, <span id="class">.nav-light-link</span>.</p>
+        <div class="navbar-content bg-dark-principal">
+          <a href="" class="nav-dark-link">Documentación</a>
+          <a href="" class="nav-dark-link">Descarga</a>
+          <a href="" class="nav-dark-link">Plantillas</a>
+        </div>
+      </nav>
+
+      <div class="container bg-light-secondary">
+<pre>
+&lt;nav class="nabvar">
+&lt;div class="navbar-content bg-dark-principal">
+  &lt;a href="" class="nav-dark-link">Documentación&lt;/a>
+  &lt;a href="" class="nav-dark-link">Descarga&lt;/a>
+  &lt;a href="" class="nav-dark-link">Plantillas&lt;/a>
+&lt;/div>
+&lt;/nav>
+</pre>
+      </div>
+      <br>
+
+        <div class="navbar-content bg-light-principal">
+          <a href="" class="nav-light-link">Documentación</a>
+          <a href="" class="nav-light-link">Descarga</a>
+          <a href="" class="nav-light-link">Plantillas</a>
+        </div>
+      </nav>
+      <div class="container bg-light-secondary">
+<pre>
+&lt;nav class="nabvar">
+&lt;div class="navbar-content bg-light-principal">
+  &lt;a href="" class="nav-light-link">Documentación&lt;/a>
+  &lt;a href="" class="nav-light-link">Descarga&lt;/a>
+  &lt;a href="" class="nav-light-link">Plantillas&lt;/a>
+&lt;/div>
+&lt;/nav>
+</pre>
+      </div>
+
+        <h3 class="light-secondary txt-1_5">NavBar Tittle</h3>
+        <p class="light-primary">Otra funcionalidad que trae consigo el apartado de los navbar es la inclusión de los títulos, estos los cuales incluyen por defecto un logotipo el cual puede ser ajustado a tu gusto al igual que el texto de título.</p>
+        <p class="light-primary">Identificaremos a los titulos con la clase <span id="class">.nav-tittle</span>, y a los logos adjuntos como <span id="class">.nav-img</span>. Estos diseños de títulos son adaptables a las pantallas, ocultando el nombre de título en pantallas con resoluciones pequeñas.</p>
+
+        <div class="row bg-dark-principal">
+          <div class="float-left">
+            <div class="navbar-tittle">
+              <img class="nav-img" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo penguin">
+              <p class="nav-tittle light-primary">penguinDesign</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="navbar-tittle">
+  &lt;img class="nav-img" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo penguin">
+  &lt;p class="nav-tittle light-primary">penguinDesign&lt;/p>
+&lt;/div>
+</pre>
+        </div>
+        <p class="light-primary">Estos diseños son adaptables a las variaciones de colores de fondo, colores de texto, tamaños de texto, solo es cosa de que incluyas lo que necesitas a tu manera</p>
+      </div>
+      <br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Cards</h3>
+        <p class="light-primary">Las cards, como su nombre lo indica, son tarjetas de presentación, las cuales puede usarse con el fin e mostrar cierto contenido a modo de slides como sería una sección de noticias o de contenido destacado, también pueden ser de utilidad para mostrar ciertas cartas de información de contacto, información personal, presentar artículos para una página de comercio, entre otros usos que se le pueden dar.</p>
+        <p class="light-primary">Estas tarjetas se pueden componer de una imagen (<span id="class">.card-img</span>), una parte de contenido (<span id="class">.card-content</span>), en el contenido un titulo (<span id="class">.card-tittle</span>) y una descripción (<span id="class">.card-description</span>), además de la sección de contenido uno de borde (<span id="class">.card-border</span>) donde podemos enlazar un link. Estos diseños de títulos son adaptables, puede llegar auxiliarse de las clases de medidas.</p>
+
+        <div class="container cont">
+          <div class="container">
+            <div class="card width-50">
+              <img src="./assets/bgimg.jpg" class="card-img" alt="">
+              <div class="card-content">
+                <p class="card-title">Titulo</p>
+                <p class="card-description">Descripcion de la imagen se puede ver que esta imagen de la imagen se puede ver que esta imagen de la imagen se puede ver que esta imagen</p>
+                <div class="card-border">
+                  <a href="#" class="link">Mas información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container">
+  &lt;div class="card width-50">
+    &lt;img src="./assets/bgimg.jpg" class="card-img" alt="">
+    &lt;div class="card-content">
+      &lt;p class="card-title">Titulo&lt;/p>
+      &lt;p class="card-description">Descripcion de la imagen se puede ver que esta imagen&lt;/p>
+      &lt;div class="card-border">
+        &lt;a href="#" class="link">Mas información&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+        <p class="light-primary">Las cards también son compatibles con los distintos backgrounds, colores de fuentes, tamaños, padding, width, bordes.</p>
+      </div>
+    </main>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>

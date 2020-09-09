@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" />
+    <title>Layout - penguinDesign</title>
+    <script src="https://kit.fontawesome.com/81af5d6183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://javiermorales0.github.io/penguinDesign/PenguinDesign.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="bg-dark-secondary dark-primary scroll">
+    <header>
+      <input type="checkbox" name="" value="" id="menu">
+
+        <nav class="navbar navbar-dark-shadow bg-light-secondary" tabindex="0">
+            <div class="navbar-tittle">
+              <label for="menu" class="menubar dark-primary txt-normal">
+                <i class="fa fa-bars"></i>
+              </label>
+                <img class="nav-img" id="inicio" src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-darkTransparent.png" alt="logo penguin">
+                <p class="nav-tittle" id="inicio">penguinDesign</p>
+            </div>
+            <div class="navbar-content bg-light-secondary">
+                <a href="doc1.html" class="nav-light-link">Documentación</a>
+                <a href="https://javiermorales0.github.io/penguinDesign/Download/PenguinDesign.zip" target="_blank" class="nav-light-link">Descarga</a>
+                <a href="temp.html" class="nav-light-link">Plantillas</a>
+            </div>
+        </nav>
+
+        <div class="sidebar bg-dark-principal">
+            <center>
+              <img src="https://javiermorales0.github.io/penguinDesign/Logo/iconColored-lightTransparent.png" alt="logo.png">
+              <br><br>
+              <h2 class="">penguinDesign</h2>
+            </center>
+            <br>
+
+            <a href="doc1.html" class="nav-light-link"><i class="fas fa-crop-alt"></i><span>Layout</span></a>
+            <a href="doc2.html" class="nav-light-link"><i class="fas fa-text-height"></i><span>Fonts</span></a>
+            <a href="doc3.html" class="nav-light-link"><i class="fas fa-pen-nib"></i></i><span>Tipografía</span></a>
+            <a href="doc4.html" class="nav-light-link"><i class="fas fa-wrench"></i><span>Utilidades</span></a>
+            <a href="doc5.html" class="nav-light-link"><i class="fas fa-cube"></i><span>Componentes</span></a>
+
+            <a href="index.html" class="home nav-light-link"><span>Inicio</span></a>
+        </div>
+    </header>
+
+    <main class="main-outnav">
+      <div class="container cont">
+        <h1 class="txt-3_5 special">Layout</h1>
+        <hr>
+        <h2 class="light-primary txt-2">Contenedores</h2>
+        <p class="light-primary">Los contenedores son parte de los elementos básicos que siempre deben de estar presentes a la hora de realizar los espacios de contenido y que además se adapta al sistema responsivo que el framework actual maneja.</p>
+        <p class="light-primary">La clase <span class="font-cursiva" id="class">.container</span> es la que controla la parte del contenido para el relleno de las páginas, el cual contiene las siguientes propiedades:</p>
+        <ul>
+          <li class="light-secondary">padding: <span id="property">0.5rem 1rem</span></li>
+          <li class="light-secondary">margin: <span id="property">0</span></li>
+          <li class="light-secondary">height: <span id="property">auto</span></li>
+        </ul>
+        <h3 class="light-secondary txt-1_5">General</h3>
+        <p class="light-primary">La clase <span class="font-cursiva" id="class">.container</span> la podemos llegar a implementar de manera adaptable al contenido de la pagina, siendo la siguiente su estructura:</p>
+        <div class="container bg-light-secondary">
+          <pre>&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- contenido --&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Padding</h2>
+        <p class="light-primary">Los contenedores contienen sus propias medidas relativas para el texto, son básicas, y lo que buscan es dejar lo más legible en contenido dentro del mismo, por lo que en muchos casos podemos encontrar que necesitamos dejar algún contenido con ciertos cambios de padding, ya sea en top, bottom, left o right, el framework actual también se encarga de eso, contando con algunas clases con medidas muy útiles, podemos verlas a continuación</p>
+
+        <ul>
+          <li class="light-secondary">padding: <span id="property">1rem</span></li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-1">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 1rem
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-1">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 1rem
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding: <span id="property">2rem</span></li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-2">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 2rem
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-2">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 2rem
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding: <span id="property">3rem</span></li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-3">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 3rem
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-3">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 3rem
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding-left: <span id="property">1rem</span>; padding-right: <span id="property">1rem</span>;</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-x-1">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 1rem a la izquierda y derecha
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-x-1">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 1rem a la izquierda y derecha
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding-left: <span id="property">2rem</span>; padding-right: <span id="property">2rem</span>;</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-x-2">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 2rem a la izquierda y derecha
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-x-2">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 2rem a la izquierda y derecha
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding-left: <span id="property">3rem</span>; padding-right: <span id="property">3rem</span>;</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-x-3">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 3rem a la izquierda y derecha
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-x-3">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 3rem a la izquierda y derecha
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding-top: <span id="property">1rem</span>; padding-bottom: <span id="property">1rem</span>;</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-y-1">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 1rem arriba y abajo
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-y-1">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 1rem arriba y abajo
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding-top: <span id="property">2rem</span>; padding-bottom: <span id="property">2rem</span>;</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-y-2">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 2rem arriba y abajo
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-y-2">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 2rem arriba y abajo
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+
+        <ul>
+          <li class="light-secondary">padding-top: <span id="property">3rem</span>; padding-bottom: <span id="property">3rem</span>;</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center padding-y-3">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Ejemplo padding 3rem arriba y abajo
+              </div>
+            </div>
+          </div>
+        </div>
+
+<pre>
+<div class="container bg-light-secondary">
+&lt;div class="container bg-light-secondary">
+  &lt;div class="row">
+    &lt;div class="float-center padding-y-3">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Ejemplo padding 3rem arriba y abajo
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</div>
+</pre>
+      </div>
+      <br><br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Cuadrícula</h2>
+        <p class="light-primary">El framework incluye de manera nativa, y además como gran utilidad, su propio sistema de grid, el cual se basa en filas y columnas, las cuales también se logran adaptar de manera responsiva y en base al diseño que se esté realizando sin propblema alguno, para ello solo falta conocer su funcionamiento.</p>
+
+        <h3 class="light-secondary txt-1_5">Filas</h3>
+        <p class="light-primary">Las filas son parte principal del sistema de grid implementado en el framework, de hecho pues son las primeras que se deben de implementar en el diseño. A parte de la clase <span class="font-cursiva" id="class">.row</span>, la cual corresponde a la que utilizaremos para indicar las filas, será necesario implementar la clase <span class="font-cursiva" id="class">.float</span> en el siguiente elemento de etiqueta para que se adapte al tamaño. Tenemos los siguientes ejemplos:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 bg-dark-principal light-secondary">
+                Fila 1 de 3
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 bg-dark-secondary light-primary">
+                Fila 2 de 3
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-12 bg-light-principal">
+                Fila 3 de 3
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="light-primary">Y la sintaxis del ejemplo anterior conrrespondería a la siguiente:</p>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-12 bg-dark-principal light-secondary">
+        Fila 1 de 3
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-12 bg-dark-secondary light-primary">
+        Fila 2 de 3
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-12 bg-light-principal">
+        Fila 3 de 3
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+
+        <p class="light-primary">Los estilos utilizados en el ejemplo anterior obviamente se pueden cambiar a su gusto, esto reemplazando los nombres de algunas clases, pero para la implementación de las filas serán necesario siempre un elemento principal <span class="font-cursiva" id="class">.container</span>, luego su respectiva fila <span class="font-cursiva" id="class">.row</span>, y por último el elemento que lo adapte a la grid <span class="font-cursiva" id="class">.float</span>.</p>
+        <p class="light-primary">Puede agregar o descartar cuantas filas se desee en el diseño.</p>
+
+        <br>
+
+        <h3 class="light-secondary txt-1_5">Columnas</h3>
+        <p class="light-primary">Las columnas son otro elemento esencial con el cual nos encargamos de trabajar con el framework, se encuentran en segundo nivel conrespecto a los rows, por lo que su correcto funcionamiento depende de la fila previamente indicado, y además esto indica que ambos van perfectamente de la mano sin presentar mayores problemas.</p>
+        <p class="light-primary">Las columnas se identifican con la clase asociada <span class="font-cursiva" id="class">.col-</span>. Estas tienen un nuombre con un prefijo común como veremos, luego del guión se le indica la cantidad de espacio que va a tener con respecto a su contenedor, los números van del 1 al 12, podemos observarlo en la siguiente tabla:</p>
+
+        <table class="table table-strip-light bg-light-principal">
+            <thead>
+            <tr>
+                <th style="width: 75px;">Clase</th>
+                <th>Ejemplo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>.col-1</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-1 bg-dark-secondary light-primary txt-center">Col tipo 1</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-2</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-2 bg-dark-secondary light-primary txt-center">Col tipo 2</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-3</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-3 bg-dark-secondary light-primary txt-center">Col tipo 3</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-4</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-4 bg-dark-secondary light-primary txt-center">Col tipo 4</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-5</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-5 bg-dark-secondary light-primary txt-center">Col tipo 5</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-6</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-6 bg-dark-secondary light-primary txt-center">Col tipo 6</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-7</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-7 bg-dark-secondary light-primary txt-center">Col tipo 7</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-8</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-8 bg-dark-secondary light-primary txt-center">Col tipo 8</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-9</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-9 bg-dark-secondary light-primary txt-center">Col tipo 9</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-10</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-10 bg-dark-secondary light-primary txt-center">Col tipo 10</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-11</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-11 bg-dark-secondary light-primary txt-center">Col tipo 11</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>.col-12</td>
+              <td>
+                <div class="row">
+                  <div class="float-left">
+                    <div class="col-12 bg-dark-secondary light-primary txt-center">Col tipo 12</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="light-primary">Las columnas se puede combinar entre si, creando maneras de posicionar tus elementos de la forma que tu desees, dos, tres, cuatro columnas, todas las que necesites.</p>
+
+        <ul>
+          <li class="light-secondary">Ejemplo con 2 columnas</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-6 border border-red">
+                Primera columna de dos
+              </div>
+              <div class="col-6 border border-green">
+                Segunda columna de dos
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="light-primary">Sintaxis del ejemplo con 2 columnas:</p>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-6 border border-red">
+        Primera columna de dos
+      &lt;/div>
+      &lt;div class="col-6 border border-green">
+        Segunda columna de dos
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+
+        <ul>
+          <li class="light-secondary">Ejemplo con 3 columnas</li>
+        </ul>
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-4 border border-red">
+                Primera columna de tres
+              </div>
+              <div class="col-4 border border-green">
+                Segunda columna de tres
+              </div>
+              <div class="col-4 border border-blue">
+                Tercera columna de tres
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="light-primary">Sintaxis del ejemplo con 3 columnas:</p>
+
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-4 border border-red">
+        Primera columna de tres
+      &lt;/div>
+      &lt;div class="col-4 border border-green">
+        Segunda columna de tres
+      &lt;/div>
+      &lt;div class="col-4 border border-blue">
+        Tercera columna de tres
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+
+        <p class="light-primary">Las columnas se van adaptando con respecto a su contenedor y a otros elementos dentro de la misma grid. Recordamos que los estilos utilizados en los ejemplos pueden ser manipulados cambiando sus clases por otras, exceptuando las clases <span class="font-cursiva" id="class">.container</span> como el contenedor de los elementos, <span class="font-cursiva" id="class">.row</span> para indicar la fila, <span class="font-cursiva" id="class">.float</span> para hacer el elemento adaptable, y <span class="font-cursiva" id="class">.col-</span> para manejar las columnas.</p>
+        <p class="light-primary">También tanto las filas como las columnas se pueden ir adaptando, esto para generar más filas y a su vez ser llenadas de distintas maneras con respecto a las columnas que contendrán. Un ejemplo de ello es el siguiente:</p>
+
+        <div class="container bg-light-secondary">
+          <div class="row">
+            <div class="float-center">
+              <div class="col-6 border border-red">
+                Fila 1 - Columna 1 de 2
+              </div>
+              <div class="col-6 border border-green">
+                Fila 1 - Columna 2 de 2
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="float-center">
+              <div class="col-4 border border-blue">
+                Fila 2 - Columna 1 de 3
+              </div>
+              <div class="col-4 border border-yellow">
+                Fila 2 - Columna 2 de 3
+              </div>
+              <div class="col-4 border border-purple">
+                Fila 2 - Columna 3 de 3
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="light-primary">La sintaxis correspondiente al ejemplo de filas y columnas combinadas es la siguiente:</p>
+        <div class="container bg-light-secondary">
+<pre>
+&lt;div class="container">
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-6 border border-red">
+        Fila 1 - Columna 1 de 2
+      &lt;/div>
+      &lt;div class="col-6 border border-green">
+        Fila 1 - Columna 2 de 2
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="float-center">
+      &lt;div class="col-4 border border-blue">
+        Fila 2 - Columna 1 de 3
+      &lt;/div>
+      &lt;div class="col-4 border border-yellow">
+        Fila 2 - Columna 2 de 3
+      &lt;/div>
+      &lt;div class="col-4 border border-purple">
+        Fila 2 - Columna 3 de 3
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="container cont">
+        <h2 class="light-primary txt-2">Puntos de interrupción</h2>
+        <p class="light-primary">El framework de penguinDesign se ha encaminado a ser de gran utilidad y versatilidad a la hora de visualizarse en distintos dispositivos, por lo que se implementan diversos puntos de interrupción o de ajuste para que se adapte de la manera más efectiva a las diversas pantallas.</p>
+        <p class="light-primary">penguinDesign se concentra en el diseño y proporciones base que tiene para lograr eso, y se centra en dos puntos de interrupción más comúnes que existen en la actualidad:</p>
+
+        <div class="container bg-light-secondary">
+          <pre>
+//Diseño adaptado para pantallas de tabletas
+@media only screen and (max-width: 834px) { //contenido }</pre>
+          <pre>
+//Diseño adaptado para pantallas de móviles
+@media only screen and (max-width: 414px) { //contenido }</pre>
+        </div>
+      </div>
+    </main>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>
